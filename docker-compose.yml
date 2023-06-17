@@ -1,4 +1,9 @@
 services:
-  soffy:
+  bitcoind:
     build: .
+    volumes:
+      - bitcoin_data:/root/.bitcoin/blocks
     tty: true
+
+volumes:
+  bitcoin_data:
