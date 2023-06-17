@@ -1,0 +1,4 @@
+services:
+  soffy:
+    build: .
+    tty: true
